@@ -1,8 +1,8 @@
 package com.thor.githubuser
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.thor.githubuser.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : AppCompatActivity() {
@@ -20,7 +20,7 @@ class SplashScreen : AppCompatActivity() {
         binding.title.alpha = 0f
 
         binding.imageView.animate().setDuration(700).alpha(1f)
-        binding.title.animate().setDuration(1000).alpha(1f).withEndAction{
+        binding.title.animate().setDuration(1000).alpha(1f).withEndAction {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
