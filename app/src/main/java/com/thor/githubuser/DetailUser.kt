@@ -23,7 +23,7 @@ class DetailUser : AppCompatActivity() {
         setUser(user)
         supportActionBar?.title = "Hai, this is ${user.name}"
 
-        binding.btnShare.setOnClickListener {
+        binding.btnShare.setOnClickListener() {
             val sendIntent = Intent().apply {
                 action = Intent.ACTION_SEND
                 putExtra(Intent.EXTRA_TEXT, "Halo, ini adalah :\n\n $user")

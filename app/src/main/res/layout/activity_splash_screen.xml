@@ -8,16 +8,17 @@
 
     <ImageView
         android:id="@+id/imageView"
+        android:contentDescription="@string/icon_launcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/icon"
         app:srcCompat="@drawable/ic_baseline_supervised_user_circle_24" />
 
     <TextView
+        android:id="@+id/title"
         style="@style/Text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

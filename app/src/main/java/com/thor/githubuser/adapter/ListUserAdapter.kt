@@ -1,8 +1,15 @@
 package com.thor.githubuser.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import com.thor.githubuser.R
 import com.thor.githubuser.databinding.ItemUserBinding
 import com.thor.githubuser.models.User
 
@@ -30,7 +37,7 @@ class ListUserAdapter(private val listUser: ArrayList<User>) :
         holder.binding.tvNameUser.text = user.name
         holder.binding.imgItemPhoto.setImageResource(user.avatar ?: 0)
         holder.binding.tvCompany.text = user.company
-        holder.itemView.setOnClickListener {
+        holder.itemView.setOnClickListener(){
             onItemClickCallback.onItemClicked(user)
         }
     }

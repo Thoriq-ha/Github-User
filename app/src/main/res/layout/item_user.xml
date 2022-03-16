@@ -17,8 +17,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.511"
-             />
+            app:layout_constraintVertical_bias="0.511" />
 
         <TextView
             android:id="@+id/tv_name_user"
@@ -31,6 +30,7 @@
             app:layout_constraintTop_toTopOf="@+id/img_item_photo" />
 
         <TextView
+            android:id="@+id/tv_company"
             style="@style/Text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,13 +41,14 @@
 
 
         <View
+            android:id="@+id/divider"
             android:layout_width="409dp"
             android:layout_height="2dp"
             android:layout_marginTop="16dp"
             android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/teal_700"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_item_photo"
-            android:backgroundTint="@color/teal_700"/>
+            app:layout_constraintTop_toBottomOf="@+id/img_item_photo" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

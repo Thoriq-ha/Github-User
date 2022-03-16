@@ -12,9 +12,9 @@
     <string name="repository">repository</string>
     <string name="ahmad_dahlan">Ahmad Dahlan</string>
     <string name="pegawai_negeri">Pegawai Negeri</string>
-    <string name="icon">icon</string>
-    <string name="share">Share</string>
     <string name="github_user">Github User</string>
+    <string name="share">Share</string>
+    <string name="icon_launcher">Icon Launcher</string>
 
     <!-- Other string resources-->
 
